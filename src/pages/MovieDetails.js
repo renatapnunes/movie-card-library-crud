@@ -11,6 +11,8 @@ class MovieDetails extends Component {
     // const { title, storyline, imagePath, genre, rating, subtitle } = {};
     const { storyline, imagePath, genre, rating, subtitle } = {};
 
+    // const { props: { match: { params: id } } } = this;
+
     return (
       <div data-testid="movie-details">
         <img alt="Movie Cover" src={ `../${imagePath}` } />

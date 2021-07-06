@@ -6,7 +6,7 @@ import MovieForm from '../components/MovieForm';
 class NewMovie extends Component {
   constructor(props) {
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   // handleSubmit(newMovie) {
@@ -15,7 +15,8 @@ class NewMovie extends Component {
   render() {
     return (
       <div data-testid="new-movie">
-        <MovieForm onSubmit={ this.handleSubmit } />
+        <p>Renderizando NewMovie</p>
+        {/* <MovieForm onSubmit={ this.handleSubmit } /> */}
       </div>
     );
   }
