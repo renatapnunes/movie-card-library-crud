@@ -15,17 +15,14 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={ MovieList } />
-          <Route exact path="/movies/new" component={ NewMovie } />
+          <Route path="/movies/new" component={ NewMovie } />
           <Route
-            exact
             path="/movies/:id/edit"
-            component={ EditMovie }
-            // render={ (props) => <EditMovie { ...props } /> }
+            render={ (props) => <EditMovie { ...props } /> }
           />
           <Route
             path="/movies/:id"
-            component={ MovieDetails }
-            // render={ (props) => <MovieDetails { ...props } /> }
+            render={ (props) => <MovieDetails { ...props } /> }
           />
           <Route component={ NotFound } />
         </Switch>
