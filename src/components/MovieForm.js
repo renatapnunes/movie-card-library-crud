@@ -21,7 +21,7 @@ class MovieForm extends React.Component {
     const { title } = this.state;
 
     return (
-      <div>
+      <div className="div-label-input">
         <label htmlFor="movie_title">
           Título
           <input
@@ -96,7 +96,7 @@ class MovieForm extends React.Component {
     const { genre } = this.state;
     return (
       <div>
-        <label htmlFor="movie_genre">
+        <label className="genre-label-input" htmlFor="movie_genre">
           Gênero
           <select
             id="movie_genre"
